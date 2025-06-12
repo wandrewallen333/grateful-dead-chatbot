@@ -188,8 +188,8 @@ function App() {
               <img src="/images/stealy.png" alt="Steal Your Face" className="logo-image" />
             </div>
             <div className="header-text">
-              <h1>⚡ Grateful Dead Oracle ⚡</h1>
-              <p>Channeling 30 years of cosmic American music</p>
+              <h1>Ripple</h1>
+              <p>Your AI assistant for all things Grateful Dead</p>
             </div>
           </div>
           <div className="header-right">

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous:wght@400&family=Fredoka+One:wght@400&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balthazar&display=swap');
 
 * {
   margin: 0;
@@ -7,12 +7,13 @@
 }
 
 :root {
-  --dead-red: #e53e3e;
-  --dead-blue: #3182ce;
-  --dead-yellow: #ecc94b;
+  --dead-black: #010001;
+  --dead-red: #ff091e;
+  --dead-blue: #0058a8;
+  --dead-yellow: #e7ef2d;
   --dead-purple: #805ad5;
   --dead-orange: #ff8c00;
-  --dead-green: #38a169;
+  --dead-green: #00dec7;
   --skull-white: #f7fafc;
   --lightning-yellow: #ffd700;
   --roses-pink: #ff69b4;
@@ -21,9 +22,9 @@
 .app {
   min-height: 100vh;
   background: 
-    radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
-    radial-gradient(circle at 40% 40%, rgba(120, 198, 121, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 20% 80%, var(--dead-blue) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, var(--dead-yellow) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, var(--dead-red) 0%, transparent 50%),
     linear-gradient(135deg, #1a1b3a 0%, #2d1b69 25%, #1a365d 50%, #2c5282 75%, #1a202c 100%);
   display: flex;
   flex-direction: column;
@@ -78,7 +79,7 @@
   background: #fff;
 }
 
-.header::before {
+/* .header::before {
   content: '';
   position: absolute;
   top: 0;
@@ -91,7 +92,7 @@
     rgba(236, 201, 75, 0.1) 66%, 
     rgba(128, 90, 213, 0.1) 100%);
   pointer-events: none;
-}
+} */
 
 .header-content {
   max-width: 1200px;
@@ -112,7 +113,7 @@
 
 .logo {
   position: relative;
-  filter: drop-shadow(0 0 10px rgba(229, 62, 62, 0.5));
+  /* filter: drop-shadow(0 0 10px rgba(229, 62, 62, 0.5)); */
 }
 
 .logo img {
@@ -127,7 +128,7 @@
   animation: subtle-glow 3s ease-in-out infinite alternate;
 }
 
-@keyframes subtle-glow {
+@keyframes -gsubtlelow {
   from { filter: drop-shadow(0 0 5px rgba(229, 62, 62, 0.3)); }
   to { filter: drop-shadow(0 0 15px rgba(229, 62, 62, 0.7)); }
 }
@@ -158,16 +159,17 @@
 }
 
 .header-text h1 {
-  font-family: 'Fredoka One', cursive;
+  font-family: "Balthazar", serif;
   font-size: 2rem;
-  background: linear-gradient(45deg, var(--dead-red), var(--dead-blue), var(--dead-yellow));
+  color: var(--dead-black);
+  /* background: linear-gradient(45deg, var(--dead-red), var(--dead-blue), var(--dead-yellow)); */
   background-size: 300% 300%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: rainbow-text 4s ease-in-out infinite;
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  /* background-clip: text; */
+  /* animation: rainbow-text 4s ease-in-out infinite; */
   margin: 0;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
 }
 
 @keyframes rainbow-text {
@@ -176,10 +178,10 @@
 }
 
 .header-text p {
-  color: var(--skull-white);
+  font-family: "Balthazar", serif;;
+  color: var(--dead-black);
   font-size: 1rem;
   margin: 0;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
   font-weight: 500;
 }
 
@@ -210,15 +212,15 @@
   50% { opacity: 0.5; }
 }
 
-.text-green-400 { color: var(--dead-green); text-shadow: 0 0 5px var(--dead-green); }
+.text-green-400 { color: var(--dead-blue); text-shadow: 0 0 5px var(--dead-blue); }
 .text-red-400 { color: var(--dead-red); text-shadow: 0 0 5px var(--dead-red); }
 .text-yellow-400 { color: var(--lightning-yellow); text-shadow: 0 0 5px var(--lightning-yellow); }
 
 .clear-button {
   padding: 0.75rem 1.25rem;
-  background: linear-gradient(45deg, var(--dead-purple), var(--roses-pink));
-  color: white;
-  border: 2px solid transparent;
+  background: #fff;
+  color: var(--dead-black);
+  border: 2px solid var(--dead-black);
   border-radius: 25px;
   cursor: pointer;
   font-size: 0.875rem;
@@ -226,7 +228,7 @@
   transition: all 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 1px;
-  box-shadow: 0 4px 15px rgba(128, 90, 213, 0.3);
+  /* box-shadow: 0 4px 15px rgba(128, 90, 213, 0.3); */
 }
 
 .clear-button:hover {
