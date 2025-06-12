@@ -70,11 +70,12 @@
 
 /* Header Styles */
 .header {
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(15px);
-  border-bottom: 3px solid transparent;
-  border-image: linear-gradient(90deg, var(--dead-red), var(--dead-blue), var(--dead-yellow)) 1;
+  /* background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(15px); */
+  /* border-bottom: 3px solid transparent;
+  border-image: linear-gradient(90deg, var(--dead-red), var(--dead-blue), var(--dead-yellow)) 1; */
   position: relative;
+  background: #fff;
 }
 
 .header::before {
@@ -112,6 +113,11 @@
 .logo {
   position: relative;
   filter: drop-shadow(0 0 10px rgba(229, 62, 62, 0.5));
+}
+
+.logo img {
+  width: 80px;
+  height: 80px;
 }
 
 .skull-icon {

@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Send, Music, Skull, MessageCircle, Loader } from 'lucide-react';
+import { Send, Music, MessageCircle, Loader } from 'lucide-react';
 import './App.css';
 
 function App() {
@@ -185,8 +185,7 @@ function App() {
         <div className="header-content">
           <div className="header-left">
             <div className="logo">
-              <Skull className="skull-icon" />
-              <div className="status-indicator"></div>
+              <img src="/images/stealy.png" alt="Steal Your Face" className="logo-image" />
             </div>
             <div className="header-text">
               <h1>⚡ Grateful Dead Oracle ⚡</h1>
